@@ -1,0 +1,49 @@
+.toolbar {
+    position: fixed; 
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    z-index: 1; 
+    text-align: center;
+
+    
+
+    &--top {
+        bottom:100%;
+        padding-bottom: 0;
+        padding-top: 2em;   
+        transition: all .4s;
+        opacity: 0;
+        text-align: center; 
+
+        .time {
+            padding: 1em 2em;
+            display: inline-block; 
+            margin: 0;
+        }
+
+        &-visible {
+            opacity: 1;
+            bottom: calc(100% - 4em);
+        }
+
+    }
+
+    &--bottom { 
+        bottom: 0; 
+        padding-top: 1.5em;
+        padding-bottom: 2em; 
+    } 
+
+    &__left {
+        margin-right: auto;
+        margin-left: 0;
+        align-self: center;
+    }
+
+    &__right {
+        margin-left: auto;
+        margin-right: 0;
+        align-self: center;
+    }
+}

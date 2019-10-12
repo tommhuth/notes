@@ -1,0 +1,23 @@
+.button {
+    &:not(.button--plain) {
+        padding: .85em 1em;
+        background-color: #FFF;
+        border: 1px solid #DDD;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: .85em;
+        margin-left: -1px;
+        display: inline-block;
+        color: var(--purple);
+        border-radius: 2px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--purple);
+            color: #FFF;
+            z-index: 1;
+            position: relative;
+            border-color: var(--purple);
+        }
+    }
+}

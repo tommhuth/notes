@@ -1,0 +1,14 @@
+.container {
+    max-width: 51rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 51rem + 4rem) {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    } 
+
+    &--flex {
+        display: flex;
+    }
+}

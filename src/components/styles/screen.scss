@@ -1,0 +1,18 @@
+.screen {
+    padding-top: 8em;
+    animation: in .35s both;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+@keyframes in {
+    from {
+        opacity: 0;
+        transform: translateY(-1em);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

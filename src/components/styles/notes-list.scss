@@ -1,0 +1,29 @@
+.notes-list {
+    margin-bottom: 14em;
+    color: #FFF;
+
+    &__item {
+        font-size: 2.25em;  
+        padding: 1em 0;
+        display: block;
+
+        &:hover {
+            background-color: rgba(#FFF, .05);
+        }
+
+        &-title {
+            //max-width: 21em;
+        } 
+
+        &-date {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.notes-list-heading {
+    color: #FFF;
+    font-size: 2.25em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
