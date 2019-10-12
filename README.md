@@ -1,1 +1,1 @@
-React boilplate
+Simple browser based text editor. 
