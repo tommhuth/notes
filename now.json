@@ -9,6 +9,10 @@
     },
     "routes": [
         {
+            "src": "/(.*)", 
+            "dest": "/index.html"
+        },
+        {
             "src": "/app.bundle.*",
             "headers": {
                 "cache-control": "max-age=9000000"
