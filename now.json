@@ -9,12 +9,16 @@
     },
     "routes": [
         {
+            "src": "/", 
+            "dest": "/public/index.html"
+        },
+        {
             "src": "/archive", 
-            "dest": "/index.html"
+            "dest": "/public/index.html"
         },
         {
             "src": "/write/.*", 
-            "dest": "/index.html"
+            "dest": "/public/index.html"
         },
         {
             "src": "/app.bundle.*",
