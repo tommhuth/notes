@@ -7,18 +7,14 @@
             "REGISTER_SERVICEWORKER": "@register-serviceworker"
         }
     },
-    "routes": [
-        {
-            "src": "/", 
-            "dest": "/public/index.html"
-        },
+    "routes": [ 
         {
             "src": "/archive", 
-            "dest": "/public/index.html"
+            "dest": "/index.html"
         },
         {
             "src": "/write/.*", 
-            "dest": "/public/index.html"
+            "dest": "/index.html"
         },
         {
             "src": "/app.bundle.*",
