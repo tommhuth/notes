@@ -62,7 +62,9 @@ const plugins = [
         swDest: "serviceworker.js",
         exclude: ["serviceworker.js"],
         templatedURLs: {
-            "/": uuid.v4()
+            "/": uuid.v4(),
+            "/archive": uuid.v4(),
+            "/write/*": uuid.v4()
         }
     })
 ]
