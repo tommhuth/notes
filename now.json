@@ -14,7 +14,7 @@
         },
         {
             "src": "/write/(.*)", 
-            "dest": "/publc/index.html"
+            "dest": "/public/index.html"
         },
         {
             "src": "/app.bundle.*",
