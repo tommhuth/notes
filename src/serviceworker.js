@@ -5,11 +5,9 @@ workbox.core.clientsClaim()
 
 // Assuming '/single-page-app.html' has been precached,
 // look up its corresponding cache key.
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/index.html"), {
-    whitelist: [
-        new RegExp("/archive"), new RegExp("/write/"),
-    ],
-})
+workbox.routing.registerNavigationRoute(
+    workbox.precaching.getCacheKeyForURL("/index.html")
+)
 
 
 // Cache the Google Fonts stylesheets with a stale-while-revalidate strategy.
