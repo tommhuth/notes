@@ -3,8 +3,14 @@ workbox.setConfig({ debug: false })
 workbox.core.skipWaiting()
 workbox.core.clientsClaim()
 
+// precache, this needs to come before the next navigation routing!
+workbox.precaching.precacheAndRoute(self.__precacheManifest || [])
 
-
+// Assuming '/single-page-app.html' has been precached,
+// look up its corresponding cache key. 
+workbox.routing.registerNavigationRoute(
+    workbox.precaching.getCacheKeyForURL("/index.html")
+)
 
 // Cache the Google Fonts stylesheets with a stale-while-revalidate strategy.
 workbox.routing.registerRoute(
@@ -29,14 +35,4 @@ workbox.routing.registerRoute(
             }),
         ],
     })
-)
-
-workbox.precaching.precacheAndRoute(self.__precacheManifest || [])
-
-
-// Assuming '/single-page-app.html' has been precached,
-// look up its corresponding cache key.
-//console.log(workbox.precaching.getCacheKeyForURL("/index.html"))
-workbox.routing.registerNavigationRoute(
-    workbox.precaching.getCacheKeyForURL("/index.html")
 )
