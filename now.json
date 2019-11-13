@@ -6,15 +6,15 @@
         "env": {
             "REGISTER_SERVICEWORKER": "@register-serviceworker"
         }
-    },
+    }, 
     "routes": [ 
         {
             "src": "/archive", 
-            "dest": "/public/index.html"
+            "dest": "index.html"
         },
         {
             "src": "/write/(.*)", 
-            "dest": "/public/index.html"
+            "dest": "index.html"
         },
         {
             "src": "/app.bundle.*",
