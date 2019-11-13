@@ -13,7 +13,7 @@
             "dest": "/index.html"
         },
         {
-            "src": "/write/.*", 
+            "src": "/write/(.*)", 
             "dest": "/index.html"
         },
         {
