@@ -5,10 +5,11 @@ workbox.core.clientsClaim()
 
 // Assuming '/single-page-app.html' has been precached,
 // look up its corresponding cache key.
-console.log(workbox.precaching.getCacheKeyForURL("/index.html"))
+/*console.log(workbox.precaching.getCacheKeyForURL("/index.html"))
 workbox.routing.registerNavigationRoute(
     workbox.precaching.getCacheKeyForURL("/index.html")
 )
+*/
 
 
 
