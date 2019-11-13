@@ -6,7 +6,7 @@ workbox.core.clientsClaim()
 // precache, this needs to come before the next navigation routing!
 workbox.precaching.precacheAndRoute(self.__precacheManifest || [])
 
-// Assuming '/single-page-app.html' has been precached,
+// Assuming '/index.html' has been precached,
 // look up its corresponding cache key. 
 workbox.routing.registerNavigationRoute(
     workbox.precaching.getCacheKeyForURL("/index.html")
