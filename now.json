@@ -10,11 +10,11 @@
     "routes": [ 
         {
             "src": "/archive", 
-            "dest": "index.html"
+            "dest": "/index.html"
         },
         {
             "src": "/write/(.*)", 
-            "dest": "index.html"
+            "dest": "/index.html"
         },
         {
             "src": "/app.bundle.*",
