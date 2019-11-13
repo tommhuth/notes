@@ -60,7 +60,7 @@ const plugins = [
     new InjectManifest({
         swSrc: "./src/serviceworker.js",
         swDest: "serviceworker.js",
-        exclude: ["serviceworker.js", "index.html"],
+        exclude: ["serviceworker.js"],
         templatedURLs: {
             "/": uuid.v4()
         }

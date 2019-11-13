@@ -3,7 +3,7 @@ workbox.setConfig({ debug: false })
 workbox.core.skipWaiting()
 workbox.core.clientsClaim()
   
-workbox.routing.registerNavigationRoute("/")
+workbox.routing.registerNavigationRoute("/index.html")
 
 // Cache the Google Fonts stylesheets with a stale-while-revalidate strategy.
 workbox.routing.registerRoute(
