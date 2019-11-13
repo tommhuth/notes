@@ -7,7 +7,7 @@ workbox.core.clientsClaim()
 // look up its corresponding cache key.
 workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/index.html"), {
     whitelist: [
-        new RegExp("/write"), new RegExp("/write/"),
+        new RegExp("/archive"), new RegExp("/write/"),
     ],
 })
 
