@@ -1,6 +1,5 @@
 // polyfill
-import "../assets/styles/app.scss"
-import "core-js/stable"
+import "../assets/styles/app.scss" 
 
 import { Workbox } from "workbox-window"
 import React from "react"
